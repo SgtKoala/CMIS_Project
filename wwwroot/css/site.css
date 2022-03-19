@@ -1,0 +1,166 @@
+/* -----------------------------------HOME PAGE----------------------------------- */
+
+.title {
+    padding: 7rem 0 1rem 0;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.display-4 {
+    font-weight: bold;
+    color: #41A5AB;
+}
+
+.buttons {
+    display: inline;
+}
+
+/* SET APPOINTMENT BUTTON */
+.setbutton {
+    background-color: #41A5AB;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* LOGIN BUTTON */
+.loginbutton {
+    background-color: white;
+    border: 5px solid #41A5AB;
+    color: #41A5AB;
+    padding: 10px 67px 10px 67px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------ADMIN DASHBOARD----------------------------------- */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        .sidebar a.active {
+            background-color: #41A5AB;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+div.content {
+    margin-left: 220px;
+    padding: 20px 16px;
+    width: 100%;
+    height: max-content;
+}
+
+.main-container {
+    position: absolute;
+    left: 0px;
+}
+
+.firstrow {
+    display: flex;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.firstcard, .secondcard, .thirdcard {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+    .firstcard:hover, .secondcard:hover, .thirdcard:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.firsttitle {
+    color: #41A5AB;
+}
+
+.secondtitle {
+    color: #F54871;
+}
+
+.thirdtitle {
+    color: #7EAD68;
+}
+
+span {
+    color: grey;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .firstrow {
+        display: inline;
+    }
+
+    .sidebar a {
+        float: left;
+        width: 100%
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.login-btn {
+    background-color: white;
+    border: 5px solid #41A5AB;
+    color: #41A5AB;
+    padding: 10px 67px 10px 67px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
