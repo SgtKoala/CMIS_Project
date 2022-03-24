@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\js\secondScript.js" />
+    <Content Remove="wwwroot\js\site - Copy.js" />
+  </ItemGroup>
+
 </Project>

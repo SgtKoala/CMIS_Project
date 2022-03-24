@@ -1,5 +1,7 @@
 /* -----------------------------------HOME PAGE----------------------------------- */
-
+body {
+    background: #f5f5f5;
+}
 .title {
     padding: 7rem 0 1rem 0;
 }
@@ -7,14 +9,26 @@
 .container {
     background-color: transparent;
 }
+div.container{
+
+}
 
 .display-4 {
     font-weight: bold;
     color: #41A5AB;
 }
-
+#container{
+    margin-bottom:50px;
+}
 .buttons {
     display: inline;
+}
+
+#test{
+    border-color:pink;
+}
+body{
+    margin:0;
 }
 
 /* SET APPOINTMENT BUTTON */
@@ -51,12 +65,15 @@
 /* -----------------------------------ADMIN DASHBOARD----------------------------------- */
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: white;
     position: fixed;
-    height: 100%;
+    top: 60px;
+    left: 0;
+    width: 260px; 
+    height: calc(100%-60px);
+    overflow-x:hidden;
+    background-color: white;
+    
+   
     overflow: auto;
 }
 
@@ -78,12 +95,80 @@
         }
 
 div.content {
-    margin-left: 220px;
-    padding: 20px 16px;
-    width: 100%;
-    height: max-content;
+    margin-left: 200px;
+    padding: 1px 16px;
+    
+    height: 1000px;
 }
 
+.main{
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    left: 260px;
+    min-height:calc(100vh - 60px);
+    background: #f5f5f5;
+
+}
+.cards {
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background: #f5f5f5;
+}
+.cards .card{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0,0,0,0.08);
+}
+
+.number{
+    font-size: 35px;
+    font-weight: 500;
+    color: #299b63;
+
+}
+.card-name{
+    color:#888;
+    font-weight:600;
+
+}
+.icon-box i{
+    font-size:45px;
+    color: #299b63;
+}
+.charts{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top:0;
+}
+.chart{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    width:100%;
+}
+.chart h2{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+
+}
+
+
+
+/*
 .main-container {
     position: absolute;
     left: 0px;
@@ -122,6 +207,57 @@ div.content {
 span {
     color: grey;
 }
+*/ 
+@media (max-width:1115px){
+    .sidebar{
+        width:60px;
+    }
+    .main{
+        left:60px;
+        width:calc(100% - 60px);
+    }
+}
+
+@media (max-width:880px){
+    
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .charts{
+        grid-template-columns: 1fr;
+    }
+    #doughnut-chart {
+        padding: 50px;
+    }
+
+    #doughnut {
+        padding: 50px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+     .sidebar a {
+            float: left;
+        }
+
+    div.sidebar {
+        margin-left: 0;
+    }
+    
+}
+@media (max-width:500px){
+    /*.topbar{
+        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+    }
+         */
+    .cards {
+        grid-template-columns:1fr;
+    }
+       
+}
 
 @media screen and (max-width: 700px) {
     .sidebar {
@@ -130,19 +266,58 @@ span {
         position: relative;
     }
 
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+    }
+
+    #doughnut-chart {
+        padding: 50px;
+    }
+
+    #doughnut {
+        padding: 50px;
+    }
+}
+    /*
     .firstrow {
         display: inline;
     }
+        
+
 
     .sidebar a {
         float: left;
-        width: 100%
+        
     }
 
-    div.content {
+    div.sidebar {
         margin-left: 0;
     }
 }
+    */
+/*
+@media screen and (max-width: 1280px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+        
+
+
+        .sidebar a {
+            float: left;
+        }
+
+    div.sidebar {
+        margin-left: 0;
+    }
+}
+
 
 @media screen and (max-width: 400px) {
     .sidebar a {
@@ -150,7 +325,15 @@ span {
         float: none;
     }
 }
+    
+    */
 
+    @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+    }
 .login-btn {
     background-color: white;
     border: 5px solid #41A5AB;

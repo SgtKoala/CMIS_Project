@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rendon\\source\\repos\\CMISID_PROJECT\\CMISID_PROJECT.csproj": {}
+    "D:\\cmsid\\CMISID_PROJECT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rendon\\source\\repos\\CMISID_PROJECT\\CMISID_PROJECT.csproj": {
+    "D:\\cmsid\\CMISID_PROJECT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rendon\\source\\repos\\CMISID_PROJECT\\CMISID_PROJECT.csproj",
+        "projectUniqueName": "D:\\cmsid\\CMISID_PROJECT.csproj",
         "projectName": "CMISID_PROJECT",
-        "projectPath": "C:\\Users\\Rendon\\source\\repos\\CMISID_PROJECT\\CMISID_PROJECT.csproj",
-        "packagesPath": "C:\\Users\\Rendon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rendon\\source\\repos\\CMISID_PROJECT\\obj\\",
+        "projectPath": "D:\\cmsid\\CMISID_PROJECT.csproj",
+        "packagesPath": "C:\\Users\\Francis\\.nuget\\packages\\",
+        "outputPath": "D:\\cmsid\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rendon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Francis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
