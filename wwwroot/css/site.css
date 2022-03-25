@@ -226,12 +226,11 @@ span {
     .charts{
         grid-template-columns: 1fr;
     }
-    #doughnut-chart {
+    
+    #barChart, #pieChart, #lineChart, #doughnutChart{
         padding: 50px;
-    }
-
-    #doughnut {
-        padding: 50px;
+        width: 310px;
+        height: 300px;
     }
 
     .sidebar {
@@ -273,13 +272,18 @@ span {
     .charts {
         grid-template-columns: 1fr;
     }
+    
 
-    #doughnut-chart {
-        padding: 50px;
+    #barChart, #lineChart {
+        padding: 10px;
+        width: 310px;
+        height: 500px;
     }
 
-    #doughnut {
-        padding: 50px;
+    #pieChart, #doughnutChart {
+        padding: 10px;
+        width: 310px;
+        height: 300px;
     }
 }
     /*

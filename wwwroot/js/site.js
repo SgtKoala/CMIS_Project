@@ -5,47 +5,44 @@
 
 
 
-const ctx = document.getElementById('barChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const bar = document.getElementById('barChart').getContext('2d');
+const myChart = new Chart(bar, {
     type: 'bar',
     data: {
         labels: ['Cardiology', 'Telemetry', 'Oncology', 'Emergency', 'Orthropedic', 'Others'],
         datasets: [{
-            label: '# of Votes',
+            label: '# of Patients per Division',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(51, 179, 179, 1)',
+                'rgba(51, 179, 179, 1)',
+                'rgba(51, 179, 179, 1)',
+                'rgba(51, 179, 179, 1)',
+                'rgba(51, 179, 179, 1)',
+                'rgba(51, 179, 179, 1)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(51, 141, 179, 0.92)',
+                'rgba(51, 141, 179, 0.92)',
+                'rgba(51, 141, 179, 0.92)',
+                'rgba(51, 141, 179, 0.92)',
+                'rgba(51, 141, 179, 0.92)',
+                'rgba(51, 141, 179, 0.92)'
             ],
             borderWidth: 1
         }]
     },
     options: {
         responsive: true,
-        
-
-    
     }
 });
 
 
 
 //total number of covid patients
-const ctx2 = document.getElementById('doughnut').getContext('2d');
-const myChart2 = new Chart(ctx2, {
-    type: 'doughnut',
+const pie = document.getElementById('pieChart').getContext('2d');
+const myChart2 = new Chart(pie, {
+    type: 'pie',
     data: {
         labels: ['Discharged','Admits'],
         datasets: [{
@@ -54,31 +51,24 @@ const myChart2 = new Chart(ctx2, {
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)'
-               
-
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)'
-                
-
             ],
             borderWidth: 1
         }]
     },
     options: {
-        responsive: true,
-
-
-
+        responsive: true
     }
 });
 
 
 //dual bar chart for COVID and Non-COVID Patients
-const bar = document.getElementById('barChart2').getContext('2d');
-const myBarChart = new Chart(bar, {
-    type: 'bar',
+const line = document.getElementById('lineChart').getContext('2d');
+const myChart3 = new Chart(line, {
+    type: 'line',
     data: {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [{
@@ -125,8 +115,8 @@ const myBarChart = new Chart(bar, {
 });
 
 //doughnut chart for COVID Patients
-const pie = document.getElementById('myPieChart').getContext('2d');
-const myPieChart = new Chart(pie, {
+const doughnut = document.getElementById('doughnutChart').getContext('2d');
+const myChart4 = new Chart(doughnut, {
     type: 'doughnut',
     data: {
         labels: ['Deaths', 'Recoveries', 'Active Cases', 'New Cases'],
